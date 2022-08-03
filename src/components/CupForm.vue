@@ -1,5 +1,8 @@
 <template>
-  <form id="cup-form">
+  <div>
+   <Message :msg="msg" v-show="msg"/>
+  </div>
+  <form id="cup-form" @submit="createCake">
     <div class="input-container">
       <label for="nome">Nome do Cliente</label>
       <input
@@ -69,6 +72,8 @@
   </form>
 </template>
 <script>
+import Message from './Message.vue'
+
 export default {
   name: "CupForm",
   data() {
@@ -95,10 +100,47 @@ export default {
       this.recheios = data.recheios;
       this.opcionaisdata = data.opcionais;
     },
+    async createCake(e){
+    e.preventDefault()
+    
+    const data = {
+      nome: this.nome,
+      massa:this.massa,
+      cobertura:this.cobertura,
+      recheio:this.recheio,
+      opicionais: Array.from(this.opcionais),
+      status:"Solicitado"
+
+    }
+    const dataJson= JSON.stringify(data)
+    const req= await fetch("http://localhost:3000/tortas",{
+      method:"POST",
+      headers:{"Content-type":"application/json"},
+      body:dataJson
+    
+    })
+   
+    const res = await  req.json()
+    // colocar uma msg de sistema
+     this.msg= `Pedido n°${res.id} realizado com Sucesso`
+      // limpar msg
+     setTimeout(() => this.msg="",3000)
+    // limpar os campos
+      this.nome =""
+      this.massa = ""
+      this.cobertura= ""
+      this.recheio = ""
+      this.opcionais = ""
+
   },
-  mounted() {
+  },
+   mounted() {
     this.getIngredientes();
   },
+  components:{
+    Message
+  }
+ 
 };
 </script>
 <style scoped>
@@ -146,6 +188,7 @@ select {
 .checkbox-container span {
   margin-left: 6px;
   font-weight: bold;
+  color: rgb(187, 183, 183);
 }
 .submit-btn {
   background-color: #fcd5ce;
