@@ -13,7 +13,7 @@ export default {
   },
   data(){
     return{
-      logo_src:"img/iconbolo.png",
+      logo_src:"img/cup.png",
 
     }
   }

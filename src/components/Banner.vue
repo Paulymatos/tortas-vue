@@ -11,12 +11,14 @@ export default {
 <style scoped>
 #main-banner {
   background-image: url("/public/img/cupcake.png");
-  background-position: 0 -130px;
+  background-position: 0 -210px;
   background-size: cover;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+ 
+
  
 }
 #main-banner h1{

@@ -1,99 +1,137 @@
 {
-    "ingredientes": {
-        "massas": [
-            {
-                "id": 1,
-                "tipo": "Branca"
-            },
-            {
-                "id": 2,
-                "tipo": "Chocolate"
-            },
-            {
-                "id": 3,
-                "tipo": "Baunilha"
-            },
-            {
-                "id": 4,
-                "tipo": "Cenoura"
-            }
-        ],
-        "recheios": [
-            {
-                "id": 1,
-                "tipo": "Prestigio"
-            },
-            {
-                "id": 2,
-                "tipo": "Nozes"
-            },
-            {
-                "id": 3,
-                "tipo": "Ameixa"
-            },
-            {
-                "id": 4,
-                "tipo": "Brigadeiro"
-            }
-        ],
-        "coberturas": [
-            {
-                "id": 1,
-                "tipo": "Brigadeiro Tradicional"
-            },
-            {
-                "id": 2,
-                "tipo": "Brigadeiro Branco"
-            },
-            {
-                "id": 3,
-                "tipo": "Nozes"
-            }
-          
-        ],
-        "opcionais": [
-            {
-                "id": 1,
-                "tipo": "Disquetes de Chocolate"
-            },
-            {
-                "id": 2,
-                "tipo": "Castanhas"
-            },
-            {
-                "id": 3,
-                "tipo": "Granulado"
-            }
-           
-        ]
-    },
-    "status": [
-        {
-            "id": 1,
-            "tipo": "Solicitado"
-        },
-        {
-            "id": 2,
-            "tipo": "Em produção"
-        },
-        {
-            "id": 3,
-            "tipo": "Finalizado"
-        }
+  "ingredientes": {
+    "massas": [
+      {
+        "id": 1,
+        "tipo": "Branca"
+      },
+      {
+        "id": 2,
+        "tipo": "Chocolate"
+      },
+      {
+        "id": 3,
+        "tipo": "Baunilha"
+      },
+      {
+        "id": 4,
+        "tipo": "Cenoura"
+      }
     ],
-    "tortas": [
-        {
-            "nome": "Matheus Battisti",
-            "massa": "Chocolate",
-            "recheio": "Prestigio",
-            "cobertura":" Brigadeiro",
-            "opcionais": [
-                "castanhas"
-                
-            ],
-            "status": "Finalizado",
-            "id": 1
-        }
-      
+    "recheios": [
+      {
+        "id": 1,
+        "tipo": "Prestigio"
+      },
+      {
+        "id": 2,
+        "tipo": "Nozes"
+      },
+      {
+        "id": 3,
+        "tipo": "Ameixa"
+      },
+      {
+        "id": 4,
+        "tipo": "Brigadeiro"
+      }
+    ],
+    "coberturas": [
+      {
+        "id": 1,
+        "tipo": "Brigadeiro Tradicional"
+      },
+      {
+        "id": 2,
+        "tipo": "Brigadeiro Branco"
+      },
+      {
+        "id": 3,
+        "tipo": "Nozes"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Disquetes de Chocolate"
+      },
+      {
+        "id": 2,
+        "tipo": "Castanhas"
+      },
+      {
+        "id": 3,
+        "tipo": "Granulado"
+      }
     ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "tortas": [
+    {
+      "nome": "ccc",
+      "massa": "Chocolate",
+      "cobertura": "Brigadeiro Tradicional",
+      "recheio": "Brigadeiro",
+      "opcionais": [
+        "Disquetes de Chocolate"
+      ],
+      "status": "Solicitado",
+      "id": 4
+    },
+    {
+      "nome": "Gleice",
+      "massa": "Chocolate",
+      "cobertura": "Brigadeiro Tradicional",
+      "recheio": "Brigadeiro",
+      "opcionais": [
+        "Disquetes de Chocolate"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    },
+    {
+      "nome": "xxx",
+      "massa": "Branca",
+      "cobertura": "Brigadeiro Tradicional",
+      "recheio": "Nozes",
+      "opcionais": [
+        "Castanhas"
+      ],
+      "status": "Solicitado",
+      "id": 8
+    },
+    {
+      "nome": "xxx",
+      "massa": "Branca",
+      "cobertura": "Brigadeiro Tradicional",
+      "recheio": "Nozes",
+      "opcionais": [
+        "Disquetes de Chocolate"
+      ],
+      "status": "Solicitado",
+      "id": 9
+    },
+    {
+      "nome": "",
+      "massa": "",
+      "cobertura": "",
+      "recheio": "",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": 10
+    }
+  ]
 }

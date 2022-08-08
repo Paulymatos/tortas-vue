@@ -15,3 +15,12 @@ export default {
   
 }
 </script>
+<style scoped>
+
+.main-container{
+  color: rgb(187, 183, 183);
+}
+.main-container >h1{
+color: #ffb7c3;
+}
+</style>

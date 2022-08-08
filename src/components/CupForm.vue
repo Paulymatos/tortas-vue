@@ -70,6 +70,9 @@
       <input type="submit" class="submit-btn" value="Montar meu Cupcake" />
     </div>
   </form>
+  <div>
+    <Message :msg="msg" v-show="msg"/>
+  </div>
 </template>
 <script>
 import Message from './Message.vue'
@@ -108,7 +111,7 @@ export default {
       massa:this.massa,
       cobertura:this.cobertura,
       recheio:this.recheio,
-      opicionais: Array.from(this.opcionais),
+      opcionais: Array.from(this.opcionais),
       status:"Solicitado"
 
     }
@@ -191,8 +194,8 @@ select {
   color: rgb(187, 183, 183);
 }
 .submit-btn {
-  background-color: #fcd5ce;
-  color: #ff006e;
+  background-color: #ffc4d6;
+  color: white;
   border-radius: 20px;
   border: none;
   font-weight: bold;
